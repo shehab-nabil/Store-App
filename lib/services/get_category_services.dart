@@ -1,9 +1,7 @@
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:store_app/helper/api.dart';
 import 'package:store_app/models/products_model.dart';
 
-class SearchForCategoriesServices {
+class GetCategoryServices {
   Future<List<ProductModel>> getCategoriesProducts({required String categoryName}) async {
 
 
