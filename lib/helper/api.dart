@@ -9,18 +9,19 @@ class Api {
       // 'Accept':'application/json',
       // 'Content-Type' :'application/x-www-form-urlencoded',
     };
-    headers.addAll({
-      'Content-Type':'application/x-www-form-urlencoded'
-      //OR 'Content-Type':'application/from-data'
-    });
+    // headers.addAll({
+    //   'Content-Type':'application/x-www-form-urlencoded'
+    //   //OR 'Content-Type':'application/from-data'
+    // });
     if (token != null) {
       headers.addAll({
         'Authorization': 'Bearer$token',
       });
-    } // IF THERE IS A TOKEN (like in registration) PUT IT
-
+     } // IF THERE IS A TOKEN (like in registration) PUT IT
     http.Response response = await http.get(Uri.parse(url),headers: headers);
     if (response.statusCode == 200) {
+      //print('status is ok');
+     // print('${jsonDecode(response.body)}');
       return jsonDecode(response.body);
     } else {
       throw Exception(
