@@ -1,4 +1,5 @@
   import 'package:flutter/material.dart';
+import 'package:store_app/screens/add_new_product.dart';
 import 'package:store_app/screens/home_screen.dart';
 import 'package:store_app/screens/update_screen.dart';
 
@@ -13,8 +14,9 @@ class StoreApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        HomeScreen.id : (context)=> const HomeScreen(),
-        UpdateProductScreen.id :(context) => const UpdateProductScreen(),
+        HomeScreen.id : (context)=>  HomeScreen(),
+        UpdateProductScreen.id :(context) =>  UpdateProductScreen(),
+        AddNewProductScreen.id : (context) => AddNewProductScreen(),
       },
    initialRoute: HomeScreen.id,
     );
