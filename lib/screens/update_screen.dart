@@ -104,6 +104,7 @@ class _UpdateProductScreenState extends State<UpdateProductScreen> {
                     setState(() {});
                     try {
                       await updateProduct(product);
+                      Navigator.pop(context);
                       print('success');
                     } catch (e) {
                       print(e.toString());

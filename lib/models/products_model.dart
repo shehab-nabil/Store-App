@@ -18,7 +18,7 @@ class ProductModel {
     required this.rating,
   });
 
-  factory ProductModel.fromJson(Map<String, dynamic> jsonData) {
+  factory ProductModel.fromJson(Map<String, dynamic> jsonData)  {
     return ProductModel(
         id: jsonData['id'],
         title: jsonData['title'],
@@ -29,6 +29,16 @@ class ProductModel {
         rating: RatingModel.fromJson(jsonData['rating']));
   }
   factory ProductModel.fromJsonUpdate(Map<String, dynamic> jsonData) {
+    return ProductModel(
+        id: jsonData['id'],
+        title: jsonData['title'],
+        priceForUpdate: jsonData['price'],
+        description: jsonData['description'],
+        category: jsonData['category'],
+        image: jsonData['image'],
+        rating: RatingModel.fromJson(jsonData['rating']));
+  }
+  factory ProductModel.fromJsonAdd(Map<String, dynamic> jsonData) {
     return ProductModel(
         id: jsonData['id'],
         title: jsonData['title'],

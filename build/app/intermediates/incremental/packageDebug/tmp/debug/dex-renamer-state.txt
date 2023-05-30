@@ -1,4 +1,4 @@
-#Sun May 28 10:49:06 EET 2023
+#Sun May 28 22:31:19 EET 2023
 base.0=C\:\\Users\\nsheh\\StudioProjects\\store_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

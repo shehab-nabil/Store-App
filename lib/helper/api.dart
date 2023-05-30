@@ -22,6 +22,7 @@ class Api {
     if (response.statusCode == 200) {
       //print('status is ok');
      // print('${jsonDecode(response.body)}');
+     // print('categories ::: ${jsonDecode(response.body)}');
       return jsonDecode(response.body);
     } else {
       throw Exception(

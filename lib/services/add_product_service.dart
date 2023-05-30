@@ -19,6 +19,6 @@ class AddProductService {
       },
    token: null
     );
- return ProductModel.fromJson(data);
+ return ProductModel.fromJsonAdd(data);
   }
 }
